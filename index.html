@@ -10,9 +10,9 @@
 </head>
 <body>
     <section>
-        <form>
+        <form id="user-info">
             <div class="mb-3">
-              <label class="form-label">Firstname & Lastname:</label>
+              <label class="form-label col-3">Firstname & Lastname:</label>
               <input type="text" id="full-name" value="Valerio Bettinelli">
             </div>
             <div class="mb-3">
@@ -21,7 +21,7 @@
             </div>
 
             <form>
-                <select name="age" id="age">
+                <select name="age" id="age"> Ticket discount:
                     <option value="underage">Underage (under 18yo)</option>
                     <option value="neither">Neither</option>
                     <option value="over-sixthyfive">Over (over 65yo)</option>
@@ -33,9 +33,9 @@
     </section>
 
     <section>
-        <div>
-
-        </div>
+        The total price for your trip is: €
+        <spam id="price-message">
+        </spam>
     </section>
     
     <script src="js/script.js"></script>

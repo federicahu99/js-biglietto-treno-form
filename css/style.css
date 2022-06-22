@@ -1,9 +1,20 @@
 body {
-    margin: 0 auto;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
     background-color: lightsteelblue;
 }
 
-form {
-    background-color: lightcyan;
+#user-info {
+    background-color: lightseagreen;
+    padding: 15px;
+    display: inline-block;
+    width: 80%;
     margin: 0 auto;
+}
+
+#bnt-submit {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
 }
