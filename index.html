@@ -11,13 +11,22 @@
 <body>
     <section>
         <form>
-            <label for="first-name" class="d-block">First name: </label>
-            <input type="text" id="first-name" name="fname" value="Albano">
-            <label for="last-name" class="d-block">Last name:</label>
-            <input type="text" id="last-name" name="lname" value="Carrisi">
-            <label for="age" class="d-block">Age:</label>
-            <input type="number" id="age" name="age" value="18">
+        <!--Nome e cognome user-->
+            <label for="name" class="d-block">First name: </label>
+            <input type="text" id="name" name="name" value="Gianni Bettinelli" required>
+        <!--Chilometri che l'user deve percorrere-->
+            <label for="trip-km" class="d-block">Km da percorrere:</label>
+            <input type="number" id="trip-km" name="trip" value="25" required>
+        <!--Età user-->
+            <label for="age" class="d-block">Choose between the given age group:</label>
+                <select name="age" id="age">
+                    <option value="minor">Minor</option>
+                    <option value="neither">Neither</option>
+                    <option value="over-sixthyfive">Over 65</option>
+                </select>
+        <!--Bottone di conferma e annullamento-->
             <input type="submit" value="Submit" class="d-block">
+            <input type="submit" value="Cancel" class="d-block">
         </form> 
           
     </section>
