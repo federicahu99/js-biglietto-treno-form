@@ -4,26 +4,6 @@
 3-Creo un biglietto digitale con dati e prezzo. 
 */
 
-
-/* Ask for fullname */
-let fullNameUser = prompt('What is it your fullname?').value
-console.log(fullName);
-document.getElementById('full-name').innerText = '' + fullName;
-
-
-
-/* Ask for km he has to travel */
-let age = prompt('What is it your fullname?').value
-console.log(fullName);
-
-
-// Starting information
-
-const kmTrip = document.getElementById('trip-km').value;
-console.log(kmTrip);
-const ageUser = document.getElementById('age').value;
-console.log(ageUser);
-
 /* Submit Button */
 const btn = document.getElementById('bnt-submit')
 btn.addEventListener('click', function() {
