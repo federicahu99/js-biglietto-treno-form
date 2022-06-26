@@ -8,23 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Linea Regionale</title>
 </head>
-<body>
-    <section>
-        <form id="user-info">
-            <div class="mb-3">
-              <label class="form-label col-3">Firstname & Lastname:</label>
-              <input type="text" id="full-name" value="Valerio Bettinelli">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Km to destination:</label>
-              <input type="text" id="trip-km" value="20">
-            </div>
+<body id="_bg">
+    <section class="container _input-area">
+      <h1>Dati:</h1>
+        <div class="row align-items-center">
+          <div class="mb-3 col">
+            <label for="fullname" class="form-label">Inserisci il tuo nome e cognome:</label>
+            <input type="text" id="fullname" value="Chiara Bianchi">
+          </div>
+          <div class="mb-3 col">
+            <label for="distance" class="form-label">Inserisci il numero di km da percorrere:</label>
+            <input type="number" id="distance" value="20" min="1">
+          </div>
+          <div class="mb-3 col">
+            <div class="mb-1"> Inserisci l'età:</div>
+            <select class="form-select" id="age">
+              <option value="m">Over 18</option>
+              <option value="u">under 18</option>
+              <option value="o">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button id="submit" class="btn btn-primary col-2 m-3">Submit</button>
+          <button id="cancel" class="btn btn-primary col-2 m-3">Cancel</button>
+        </div>            
+    </section>
 
-            <form>
-                <select name="age" id="age"> Ticket discount:
-                    <option value="1">Underage (under 18yo)</option>
-            
-    
+    <section class="container d-none" id="_info-area">
+      <h1>Anteprima biglietto:</h1>
+      <div class="row">
+        <div class="col" id="fullname-passenger">Nome e cognome: </div>
+        <div class="col" id="km-trip">Km viaggio: </div>
+        <div class="col text-white" id="initial-price">Costo viaggio: </div>
+        <div class="col text-white" id="discounted-price">Sconto applicato: </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>
