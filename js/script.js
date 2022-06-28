@@ -10,7 +10,6 @@ const fullName = document.getElementById('fullname');
 const distance = document.getElementById('distance');
 const age = document.getElementById('age');
 const submit = document.getElementById('submit');
-const cancel = document.getElementById('cancel');
 //dati ticket form
 
 // Prendo i campi da riempire
@@ -22,6 +21,7 @@ let discounted;
 
 // Faccio funzionare il btn submit
 submit.addEventListener('click', function() {
+    
     let fullNameAdd = fullName.value;
     let distanceAdd = distance.value;
     let discountedPrice
@@ -59,18 +59,6 @@ submit.addEventListener('click', function() {
     distanceTicket.append(distanceAdd);
     price.append(initialPrice);
     discounted.append(discountedPrice.toFixed(2));
-
-    /* Btn cancel */
-    cancel.addEventListener('click', function() {
-        fullNameAdd= '';
-        price.innerHTML= fullName;
-        distanceAdd= '';
-        distanceAdd.innerTHTML= distance;
-        age.value = '';
-        age.value= age;
-        infoArea = document.getElementById('_info-area');
-        infoArea.classList.add('d-none');
-    })
 })
 
 
